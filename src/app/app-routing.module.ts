@@ -7,9 +7,8 @@ import {CourseViewerComponent} from './components/course-viewer/course-viewer.co
 const routes: Routes = [
   {path: '', component: CourseTableComponent},
   {path: 'courses', component: CourseTableComponent},
-  {path: 'course/:cid', component: CourseViewerComponent},
-  {path: 'course/:cid/module/:mid', component: CourseViewerComponent},
-  {path: 'course/:cid/module/:mid/lesson/:lid', component: CourseViewerComponent}
+  {path: 'courses/:cid/modules', component: CourseViewerComponent},
+  {path: 'courses/:cid/modules/:mid/lessons', component: CourseViewerComponent}
 ];
 
 @NgModule({

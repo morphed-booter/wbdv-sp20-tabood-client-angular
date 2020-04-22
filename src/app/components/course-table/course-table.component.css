@@ -6,20 +6,6 @@
 }
 
 .wbdv-header {
-  background-color:transparent;
-  border-color:transparent;
-}
-
-.wbdv-course-row {
-  color:black;
-  border: ridge;
-  border-color:rgb(224, 235, 235);
-  background-color:white;
-}
-
-.wbdv-course-row.active {
-  color:#fff;
-  border: ridge;
-  border-color:rgb(224, 235, 235);
-  background-color:#00a8ff;
+  background-color: transparent;
+  border-color: transparent;
 }
