@@ -1,7 +1,15 @@
-<ul>
-  <li *ngFor="let course of courses">
-    <a href="course/{{course._id}}">
+<div class="row container">
+  <div class="col-3">
+<ul class="list-group">
+  <li class="list-group-item webdev">Courses</li>
+  <li (click)="selectCourse(course._id)"
+      class="list-group-item webdev"
+      [ngClass]="{'active':course._id ===selectedCourseId}"
+      *ngFor="let course of courses">
+    <a href="course/{{course._id}}/modules">
       {{course.title}}
     </a>
   </li>
 </ul>
+</div>
+</div>

@@ -10,7 +10,13 @@ export class CourseTableComponent implements OnInit {
 
   courses = [];
 
+  selectedCourseId = 0;
+
   constructor(private service: CourseServiceClient) { }
+
+  selectCourse = (courseId) => {
+    this.selectedCourseId = courseId;
+  }
 
   ngOnInit(): void {
     this.service.findAllCourses()

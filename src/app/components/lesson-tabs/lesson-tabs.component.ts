@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {LessonServiceClient} from '../../services/LessonServiceClient';
 
 @Component({
   selector: 'app-lesson-tabs',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LessonTabsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private service: LessonServiceClient) { }
+
+  lessons = []
+  selectedLessonId = 0
+  moduleId = 0
+  courseId = 0
 
   ngOnInit(): void {
   }
