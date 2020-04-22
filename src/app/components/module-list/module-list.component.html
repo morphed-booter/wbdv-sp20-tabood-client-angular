@@ -1,15 +1,12 @@
-<div class="row container">
-  <div class="col-3">
-    <ul class="list-group">
+<ul class="list-group">
       <li class="list-group-item webdev">Modules</li>
       <li (click)="selectModule(module._id)"
           class="list-group-item webdev"
           [ngClass]="{'active':module._id ===selectedModuleId}"
           *ngFor="let module of modules">
-        <a href="courses/{{courseId}}/modules/{{module._id}}/lessons">
+        <a href="course-viewer/courses/{{courseId}}/modules/{{module._id}}/lessons">
           {{module.title}}
         </a>
       </li>
-    </ul>
-  </div>
-</div>
+</ul>
+

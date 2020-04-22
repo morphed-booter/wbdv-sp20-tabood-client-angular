@@ -13,13 +13,11 @@ export class LessonTabsComponent implements OnInit {
               private route: ActivatedRoute) { }
 
   lessons = []
-  selectedLessonId = 0
   moduleId = 0
   courseId = 0
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
-      this.selectedLessonId = params.lessonId;
       this.moduleId = params.moduleId;
       this.courseId = params.courseId;
       this.service.findLessonsforModule(this.moduleId)

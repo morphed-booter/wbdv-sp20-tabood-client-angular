@@ -6,7 +6,7 @@
       class="list-group-item webdev"
       [ngClass]="{'active':course._id ===selectedCourseId}"
       *ngFor="let course of courses">
-    <a href="courses/{{course._id}}/modules">
+    <a href="course-viewer/courses/{{course._id}}/modules">
       {{course.title}}
     </a>
   </li>
